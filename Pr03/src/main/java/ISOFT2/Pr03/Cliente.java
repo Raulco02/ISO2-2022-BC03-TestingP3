@@ -1,7 +1,7 @@
 package ISOFT2.Pr03;
 
 public class Cliente {
-	
+
         protected int edad;
         protected boolean estudiando;
         protected boolean casaPadres;
@@ -85,7 +85,7 @@ public class Cliente {
         
 
        @SuppressWarnings("serial")
-	class ErrorException extends Exception{
+	static class ErrorException extends Exception{
             public ErrorException(String msg){
                 super(msg);
             }
