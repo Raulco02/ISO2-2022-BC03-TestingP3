@@ -2,7 +2,6 @@ package ISOFT2.Pr03;
 
 public class Cliente {
 
-	
         protected int edad;
         protected boolean estudiando;
         protected boolean casaPadres;
