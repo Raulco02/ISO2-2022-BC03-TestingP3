@@ -48,32 +48,6 @@ public class Cliente {
             this.casaPadres = casaPadres;
         }
         
-        /*
-        static Cliente crearCliente() throws ErrorException{
-
-            Cliente c1 = null;
-            int edad = 0;
-
-            try {
-                System.out.println("Dime una edad");
-                edad = sn.nextInt();
-                System.out.println("¿Estudias? (true or false)");
-                boolean estudiar = sn.nextBoolean();
-                System.out.println("¿Vives con tus padres? (true or false");
-                boolean padres = sn.nextBoolean();
-                c1 = new Cliente(edad, estudiar, padres);
-
-            } catch (InputMismatchException e){
-                System.out.println("No has introducido un valor válido");
-            }
-                
-           
-            
-
-            return c1;
-        }
-		*/
-        
         public String asignarCuenta() 
         {
             String cuenta = "";
