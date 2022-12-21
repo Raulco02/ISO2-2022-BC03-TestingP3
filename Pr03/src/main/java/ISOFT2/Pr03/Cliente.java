@@ -1,10 +1,6 @@
 package ISOFT2.Pr03;
 
-//import java.util.InputMismatchException;
-//import java.util.Scanner;
-
 public class Cliente {
-		//static Scanner sn = new Scanner(System.in);
 	
         protected int edad;
         protected boolean estudiando;
