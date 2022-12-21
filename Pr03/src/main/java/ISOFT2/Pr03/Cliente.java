@@ -1,10 +1,7 @@
 package ISOFT2.Pr03;
 
-//import java.util.InputMismatchException;
-//import java.util.Scanner;
-
 public class Cliente {
-		//static Scanner sn = new Scanner(System.in);
+
 	
         protected int edad;
         protected boolean estudiando;
@@ -89,7 +86,7 @@ public class Cliente {
         
 
        @SuppressWarnings("serial")
-	class ErrorException extends Exception{
+	static class ErrorException extends Exception{
             public ErrorException(String msg){
                 super(msg);
             }
