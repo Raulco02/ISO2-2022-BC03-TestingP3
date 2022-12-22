@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Pr03</a> &gt; <a href="index.source.html" class="el_package">ISOFT2.Pr03</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">package ISOFT2.Pr03;
+
+//import java.util.InputMismatchException;
+//import java.util.Scanner;
+
+public class Cliente {
+		//static Scanner sn = new Scanner(System.in);
+	
+        protected int edad;
+        protected boolean estudiando;
+        protected boolean casaPadres;
+
+<span class="fc" id="L13">        public Cliente(int edad, boolean estudiando, boolean casaPadres) throws ErrorException {</span>
+<span class="fc" id="L14">            this.setEdad(edad);</span>
+<span class="fc" id="L15">            this.setEstudiando(estudiando);</span>
+<span class="fc" id="L16">            this.setCasaPadres(casaPadres);</span>
+            
+<span class="fc" id="L18">        }</span>
+
+        public int getEdad() {
+<span class="fc" id="L21">            return edad;</span>
+        }
+
+        public void setEdad(int edad) throws ErrorException {
+            
+<span class="pc bpc" id="L26" title="1 of 4 branches missed.">            if (edad &gt; 0 &amp;&amp; edad &lt; 120 ) {</span>
+<span class="fc" id="L27">                this.edad = edad;</span>
+            } else {
+<span class="fc" id="L29">                throw new ErrorException(&quot;No has introducido una edad válida.&quot;);</span>
+            }
+
+            
+<span class="fc" id="L33">        }</span>
+
+        public boolean isEstudiando() {
+<span class="fc" id="L36">            return estudiando;</span>
+        }
+
+        public void setEstudiando(boolean estudiando) {
+<span class="fc" id="L40">            this.estudiando = estudiando;</span>
+<span class="fc" id="L41">        }</span>
+
+        public boolean isCasaPadres() {
+<span class="fc" id="L44">            return casaPadres;</span>
+        }
+
+        public void setCasaPadres(boolean casaPadres) {
+<span class="fc" id="L48">            this.casaPadres = casaPadres;</span>
+<span class="fc" id="L49">        }</span>
+        
+        /*
+        static Cliente crearCliente() throws ErrorException{
+
+            Cliente c1 = null;
+            int edad = 0;
+
+            try {
+                System.out.println(&quot;Dime una edad&quot;);
+                edad = sn.nextInt();
+                System.out.println(&quot;¿Estudias? (true or false)&quot;);
+                boolean estudiar = sn.nextBoolean();
+                System.out.println(&quot;¿Vives con tus padres? (true or false&quot;);
+                boolean padres = sn.nextBoolean();
+                c1 = new Cliente(edad, estudiar, padres);
+
+            } catch (InputMismatchException e){
+                System.out.println(&quot;No has introducido un valor válido&quot;);
+            }
+                
+           
+            
+
+            return c1;
+        }
+		*/
+        
+        public String asignarCuenta() 
+        {
+<span class="fc" id="L79">            String cuenta = &quot;&quot;;</span>
+            try {
+<span class="fc bfc" id="L81" title="All 6 branches covered.">                if (getEdad() &lt; 18 &amp;&amp; isEstudiando() &amp;&amp; isCasaPadres())</span>
+            {
+<span class="fc" id="L83">                cuenta = &quot;Cuenta confort&quot;;</span>
+            }
+<span class="fc bfc" id="L85" title="All 8 branches covered.">            if (getEdad() &lt; 25 &amp;&amp; getEdad() &gt;= 18 &amp;&amp; isEstudiando() &amp;&amp; !isCasaPadres())</span>
+            {
+<span class="fc" id="L87">                cuenta = &quot;Cuenta Vamos que tu puedes&quot;;</span>
+            }
+<span class="fc bfc" id="L89" title="All 8 branches covered.">            if (getEdad() &gt;= 18 &amp;&amp; getEdad() &lt; 25 &amp;&amp; !isEstudiando() &amp;&amp; isCasaPadres()){</span>
+<span class="fc" id="L90">                cuenta = &quot;Cuenta Ahorra ahora que puedes&quot;;</span>
+<span class="fc bfc" id="L91" title="All 6 branches covered.">            } else if (getEdad() &gt; 18 &amp;&amp; !isEstudiando() &amp;&amp; !isCasaPadres()){</span>
+<span class="fc" id="L92">                cuenta = &quot;Cuenta Saltando del nido&quot;;</span>
+            } 
+<span class="fc bfc" id="L94" title="All 6 branches covered.">            if (getEdad() &gt;= 25 &amp;&amp; !isEstudiando() &amp;&amp; isCasaPadres()){</span>
+<span class="fc" id="L95">                cuenta = &quot;Cuenta Independizate que va siendo hora&quot;;</span>
+            }
+<span class="fc bfc" id="L97" title="All 6 branches covered.">            if (getEdad() &gt;= 25 &amp;&amp; !isEstudiando() &amp;&amp; !isCasaPadres()) {</span>
+<span class="fc" id="L98">                cuenta = &quot;Cuenta Bienvenido a la vida adulta&quot;;</span>
+            }
+<span class="fc bfc" id="L100" title="All 2 branches covered.">            if (cuenta == &quot;&quot;)</span>
+            {
+<span class="fc" id="L102">                cuenta = &quot;No hay ninguna cuenta para ti :(&quot;;</span>
+            }
+
+
+
+            
+<span class="nc" id="L108">            } catch (NullPointerException e){</span>
+<span class="nc" id="L109">                System.out.println(&quot;No se puede crear el cliente con datos no válidos.&quot;);</span>
+
+<span class="fc" id="L111">            }</span>
+<span class="fc" id="L112">            return cuenta;</span>
+        }
+
+        
+
+       @SuppressWarnings(&quot;serial&quot;)
+	class ErrorException extends Exception{
+<span class="fc" id="L119">            public ErrorException(String msg){</span>
+<span class="fc" id="L120">                super(msg);</span>
+<span class="fc" id="L121">            }</span>
+       } 
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
