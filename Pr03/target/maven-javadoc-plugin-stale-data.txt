@@ -1,0 +1,131 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/adria/Desktop/Workspaces/ISO2-2022-BC03-TestingP3/Pr03/target/classes;C:/Users/adria/Desktop/Workspaces/ISO2-2022-BC03-TestingP3/Pr03/target/test-classes;C:/Users/adria/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar;C:/Users/adria/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar;C:/Users/adria/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/3.0.0-M7/maven-surefire-plugin-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/maven-surefire-common/3.0.0-M7/maven-surefire-common-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M7/surefire-api-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-extensions-api/3.0.0-M7/surefire-extensions-api-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M7/surefire-booter-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-extensions-spi/3.0.0-M7/surefire-extensions-spi-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-java/1.1.1/plexus-java-1.1.1.jar;C:/Users/adria/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar;C:/Users/adria/.m2/repository/com/thoughtworks/qdox/qdox/2.0.1/qdox-2.0.1.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-shared-utils/3.0.0-M7/surefire-shared-utils-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/plugins/maven-surefire-report-plugin/3.0.0-M7/maven-surefire-report-plugin-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-report-parser/3.0.0-M7/surefire-report-parser-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M7/surefire-logger-api-3.0.0-M7.jar;C:/Users/adria/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.1.0/maven-reporting-api-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/3.1.0/maven-reporting-impl-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/plugins/maven-war-plugin/3.3.2/maven-war-plugin-3.3.2.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-plugin-api/3.1.0/maven-plugin-api-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-core/3.1.0/maven-core-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-settings/3.1.0/maven-settings-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-settings-builder/3.1.0/maven-settings-builder-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-repository-metadata/3.1.0/maven-repository-metadata-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-model-builder/3.1.0/maven-model-builder-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-aether-provider/3.1.0/maven-aether-provider-3.1.0.jar;C:/Users/adria/.m2/repository/org/eclipse/aether/aether-spi/0.9.0.M2/aether-spi-0.9.0.M2.jar;C:/Users/adria/.m2/repository/org/eclipse/aether/aether-impl/0.9.0.M2/aether-impl-0.9.0.M2.jar;C:/Users/adria/.m2/repository/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.4.2/plexus-classworlds-2.4.2.jar;C:/Users/adria/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar;C:/Users/adria/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-model/3.1.0/maven-model-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-archiver/3.5.0/maven-archiver-3.5.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/maven-artifact/3.1.0/maven-artifact-3.1.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar;C:/Users/adria/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-archiver/4.2.2/plexus-archiver-4.2.2.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-io/3.2.0/plexus-io-3.2.0.jar;C:/Users/adria/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar;C:/Users/adria/.m2/repository/org/iq80/snappy/snappy/0.4/snappy-0.4.jar;C:/Users/adria/.m2/repository/org/tukaani/xz/1.8/xz-1.8.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar;C:/Users/adria/.m2/repository/org/apache/maven/shared/maven-filtering/3.1.1/maven-filtering-3.1.1.jar;C:/Users/adria/.m2/repository/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar;C:/Users/adria/.m2/repository/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar;C:/Users/adria/.m2/repository/org/eclipse/aether/aether-api/0.9.0.M2/aether-api-0.9.0.M2.jar;C:/Users/adria/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.0.0.M2a/org.eclipse.sisu.plexus-0.0.0.M2a.jar;C:/Users/adria/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar;C:/Users/adria/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar;C:/Users/adria/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar;C:/Users/adria/.m2/repository/com/google/guava/guava/10.0.1/guava-10.0.1.jar;C:/Users/adria/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar;C:/Users/adria/.m2/repository/org/sonatype/sisu/sisu-guice/3.1.0/sisu-guice-3.1.0-no_aop.jar;C:/Users/adria/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar;C:/Users/adria/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.0.0.M2a/org.eclipse.sisu.inject-0.0.0.M2a.jar;C:/Users/adria/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.9.2/doxia-site-renderer-1.9.2.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-core/1.9.1/doxia-core-1.9.1.jar;C:/Users/adria/.m2/repository/org/apache/httpcomponents/httpclient/4.5.8/httpclient-4.5.8.jar;C:/Users/adria/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar;C:/Users/adria/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.9.1/doxia-logging-api-1.9.1.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.9.1/doxia-sink-api-1.9.1.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.9.2/doxia-decoration-model-1.9.2.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.9.2/doxia-skin-model-1.9.2.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.9.1/doxia-module-xhtml-1.9.1.jar;C:/Users/adria/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml5/1.9.1/doxia-module-xhtml5-1.9.1.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-component-annotations/2.0.0/plexus-component-annotations-2.0.0.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar;C:/Users/adria/.m2/repository/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.jar;C:/Users/adria/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar;C:/Users/adria/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar;C:/Users/adria/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar;C:/Users/adria/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar;C:/Users/adria/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar;C:/Users/adria/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar;C:/Users/adria/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar;C:/Users/adria/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar;C:/Users/adria/.m2/repository/commons-chain/commons-chain/1.2/commons-chain-1.2.jar;C:/Users/adria/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar;C:/Users/adria/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'8'
+-sourcepath
+'C:/Users/adria/Desktop/Workspaces/ISO2-2022-BC03-TestingP3/Pr03/src/test/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/adria/Desktop/Workspaces/ISO2-2022-BC03-TestingP3/Pr03/target/site/testapidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Pr03 0.0.1-SNAPSHOT Test API'
+-link
+'../apidocs'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/adria/Desktop/Workspaces/ISO2-2022-BC03-TestingP3/Pr03/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Pr03 0.0.1-SNAPSHOT Test API'
+ISOFT2.Pr03
+'C:/Users/adria/Desktop/Workspaces/ISO2-2022-BC03-TestingP3/Pr03/src/test/java/ISOFT2/Pr03/ClienteTest.java'
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\classes = 1671714254059
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\test-classes = 1671714202649
+C:\Users\adria\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar = 1671464218651
+C:\Users\adria\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar = 1671450730750
+C:\Users\adria\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0-M7\maven-surefire-plugin-3.0.0-M7.jar = 1671464218645
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0-M7\maven-surefire-common-3.0.0-M7.jar = 1671464218683
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M7\surefire-api-3.0.0-M7.jar = 1671464218627
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0-M7\surefire-extensions-api-3.0.0-M7.jar = 1671464218642
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M7\surefire-booter-3.0.0-M7.jar = 1671464218715
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M7\surefire-extensions-spi-3.0.0-M7.jar = 1671464218721
+C:\Users\adria\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.1.1\maven-common-artifact-filters-3.1.1.jar = 1671464218751
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-java\1.1.1\plexus-java-1.1.1.jar = 1671464218780
+C:\Users\adria\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar = 1671464218814
+C:\Users\adria\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar = 1671464218860
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M7\surefire-shared-utils-3.0.0-M7.jar = 1671464219033
+C:\Users\adria\.m2\repository\org\apache\maven\plugins\maven-surefire-report-plugin\3.0.0-M7\maven-surefire-report-plugin-3.0.0-M7.jar = 1671464218940
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-report-parser\3.0.0-M7\surefire-report-parser-3.0.0-M7.jar = 1671464218991
+C:\Users\adria\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M7\surefire-logger-api-3.0.0-M7.jar = 1671464219006
+C:\Users\adria\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.1.0\maven-reporting-api-3.1.0.jar = 1671464219034
+C:\Users\adria\.m2\repository\org\apache\maven\reporting\maven-reporting-impl\3.1.0\maven-reporting-impl-3.1.0.jar = 1671464219108
+C:\Users\adria\.m2\repository\org\apache\maven\plugins\maven-war-plugin\3.3.2\maven-war-plugin-3.3.2.jar = 1671464219225
+C:\Users\adria\.m2\repository\org\apache\maven\maven-plugin-api\3.1.0\maven-plugin-api-3.1.0.jar = 1671463147117
+C:\Users\adria\.m2\repository\org\apache\maven\maven-core\3.1.0\maven-core-3.1.0.jar = 1671464219263
+C:\Users\adria\.m2\repository\org\apache\maven\maven-settings\3.1.0\maven-settings-3.1.0.jar = 1671464219265
+C:\Users\adria\.m2\repository\org\apache\maven\maven-settings-builder\3.1.0\maven-settings-builder-3.1.0.jar = 1671464219274
+C:\Users\adria\.m2\repository\org\apache\maven\maven-repository-metadata\3.1.0\maven-repository-metadata-3.1.0.jar = 1671464219291
+C:\Users\adria\.m2\repository\org\apache\maven\maven-model-builder\3.1.0\maven-model-builder-3.1.0.jar = 1671464219312
+C:\Users\adria\.m2\repository\org\apache\maven\maven-aether-provider\3.1.0\maven-aether-provider-3.1.0.jar = 1671464219341
+C:\Users\adria\.m2\repository\org\eclipse\aether\aether-spi\0.9.0.M2\aether-spi-0.9.0.M2.jar = 1671464219414
+C:\Users\adria\.m2\repository\org\eclipse\aether\aether-impl\0.9.0.M2\aether-impl-0.9.0.M2.jar = 1671464219435
+C:\Users\adria\.m2\repository\org\eclipse\aether\aether-util\0.9.0.M2\aether-util-0.9.0.M2.jar = 1671463138690
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4.2\plexus-classworlds-2.4.2.jar = 1671464219514
+C:\Users\adria\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar = 1671450281212
+C:\Users\adria\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar = 1671450281212
+C:\Users\adria\.m2\repository\org\apache\maven\maven-model\3.1.0\maven-model-3.1.0.jar = 1671464219518
+C:\Users\adria\.m2\repository\org\apache\maven\maven-archiver\3.5.0\maven-archiver-3.5.0.jar = 1671464219582
+C:\Users\adria\.m2\repository\org\apache\maven\maven-artifact\3.1.0\maven-artifact-3.1.0.jar = 1671463147109
+C:\Users\adria\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar = 1671464219656
+C:\Users\adria\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar = 1671448946447
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-archiver\4.2.2\plexus-archiver-4.2.2.jar = 1671448947210
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-io\3.2.0\plexus-io-3.2.0.jar = 1671448947422
+C:\Users\adria\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar = 1671448947538
+C:\Users\adria\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar = 1671448947499
+C:\Users\adria\.m2\repository\org\tukaani\xz\1.8\xz-1.8.jar = 1671448947556
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.26\plexus-interpolation-1.26.jar = 1671448947100
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar = 1671448947580
+C:\Users\adria\.m2\repository\org\apache\maven\shared\maven-filtering\3.1.1\maven-filtering-3.1.1.jar = 1671464219699
+C:\Users\adria\.m2\repository\org\sonatype\plexus\plexus-build-api\0.0.7\plexus-build-api-0.0.7.jar = 1671464219712
+C:\Users\adria\.m2\repository\org\apache\maven\shared\maven-mapping\3.0.0\maven-mapping-3.0.0.jar = 1671464219766
+C:\Users\adria\.m2\repository\org\eclipse\aether\aether-api\0.9.0.M2\aether-api-0.9.0.M2.jar = 1671464219777
+C:\Users\adria\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.0.0.M2a\org.eclipse.sisu.plexus-0.0.0.M2a.jar = 1671464219837
+C:\Users\adria\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar = 1671464219849
+C:\Users\adria\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar = 1671464219857
+C:\Users\adria\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar = 1671463147168
+C:\Users\adria\.m2\repository\com\google\guava\guava\10.0.1\guava-10.0.1.jar = 1671464219979
+C:\Users\adria\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar = 1671464219952
+C:\Users\adria\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar = 1671463147432
+C:\Users\adria\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar = 1671464219946
+C:\Users\adria\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.0.0.M2a\org.eclipse.sisu.inject-0.0.0.M2a.jar = 1671464219989
+C:\Users\adria\.m2\repository\asm\asm\3.3.1\asm-3.3.1.jar = 1671464220002
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.9.2\doxia-site-renderer-1.9.2.jar = 1671464220042
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-core\1.9.1\doxia-core-1.9.1.jar = 1671464220069
+C:\Users\adria\.m2\repository\org\apache\httpcomponents\httpclient\4.5.8\httpclient-4.5.8.jar = 1671464220138
+C:\Users\adria\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar = 1671463148013
+C:\Users\adria\.m2\repository\org\apache\httpcomponents\httpcore\4.4.11\httpcore-4.4.11.jar = 1671464220172
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.9.1\doxia-logging-api-1.9.1.jar = 1671464220173
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.9.1\doxia-sink-api-1.9.1.jar = 1671464220198
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.9.2\doxia-decoration-model-1.9.2.jar = 1671464220255
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-skin-model\1.9.2\doxia-skin-model-1.9.2.jar = 1671464220313
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.9.1\doxia-module-xhtml-1.9.1.jar = 1671464220343
+C:\Users\adria\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\1.9.1\doxia-module-xhtml5-1.9.1.jar = 1671464220355
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-component-annotations\2.0.0\plexus-component-annotations-2.0.0.jar = 1671448947583
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-10\plexus-i18n-1.0-beta-10.jar = 1671463148131
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-30\plexus-container-default-1.0-alpha-30.jar = 1671463138807
+C:\Users\adria\.m2\repository\org\codehaus\plexus\plexus-velocity\1.2\plexus-velocity-1.2.jar = 1671448947726
+C:\Users\adria\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar = 1671448947740
+C:\Users\adria\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar = 1671448947770
+C:\Users\adria\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar = 1671463139196
+C:\Users\adria\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar = 1671463139258
+C:\Users\adria\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar = 1671463139416
+C:\Users\adria\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar = 1671448947801
+C:\Users\adria\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar = 1671448947726
+C:\Users\adria\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar = 1671463138885
+C:\Users\adria\.m2\repository\commons-chain\commons-chain\1.2\commons-chain-1.2.jar = 1671464220486
+C:\Users\adria\.m2\repository\commons-digester\commons-digester\2.1\commons-digester-2.1.jar = 1671463148211
+C:\Users\adria\.m2\repository\commons-beanutils\commons-beanutils\1.8.3\commons-beanutils-1.8.3.jar = 1671464220530
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\src\test\java = 1671713455614
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\allclasses-frame.html = 1671714291706
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\allclasses-noframe.html = 1671714291707
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\constant-values.html = 1671714291688
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\deprecated-list.html = 1671714291705
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\help-doc.html = 1671714291711
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\index-all.html = 1671714291702
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\index.html = 1671714291708
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\overview-tree.html = 1671714291699
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\package-list = 1671714291670
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\script.js = 1671714291711
+C:\Users\adria\Desktop\Workspaces\ISO2-2022-BC03-TestingP3\Pr03\target\site\testapidocs\stylesheet.css = 1671714218337

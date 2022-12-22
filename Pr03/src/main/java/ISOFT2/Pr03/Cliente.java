@@ -85,7 +85,7 @@ public class Cliente {
         
 
        @SuppressWarnings("serial")
-	static class ErrorException extends Exception{
+       class ErrorException extends Exception{
             public ErrorException(String msg){
                 super(msg);
             }

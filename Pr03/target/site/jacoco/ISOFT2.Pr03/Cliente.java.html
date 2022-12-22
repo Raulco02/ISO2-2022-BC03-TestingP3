@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cliente.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Pr03</a> &gt; <a href="index.source.html" class="el_package">ISOFT2.Pr03</a> &gt; <span class="el_source">Cliente.java</span></div><h1>Cliente.java</h1><pre class="source lang-java linenums">package ISOFT2.Pr03;
+
+public class Cliente {
+
+        protected int edad;
+        protected boolean estudiando;
+        protected boolean casaPadres;
+
+<span class="fc" id="L9">        public Cliente(int edad, boolean estudiando, boolean casaPadres) throws ErrorException {</span>
+<span class="fc" id="L10">            this.setEdad(edad);</span>
+<span class="fc" id="L11">            this.setEstudiando(estudiando);</span>
+<span class="fc" id="L12">            this.setCasaPadres(casaPadres);</span>
+            
+<span class="fc" id="L14">        }</span>
+
+        public int getEdad() {
+<span class="fc" id="L17">            return edad;</span>
+        }
+
+        public void setEdad(int edad) throws ErrorException {
+            
+<span class="pc bpc" id="L22" title="1 of 4 branches missed.">            if (edad &gt; 0 &amp;&amp; edad &lt; 120 ) {</span>
+<span class="fc" id="L23">                this.edad = edad;</span>
+            } else {
+<span class="fc" id="L25">                throw new ErrorException(&quot;No has introducido una edad válida.&quot;);</span>
+            }
+
+            
+<span class="fc" id="L29">        }</span>
+
+        public boolean isEstudiando() {
+<span class="fc" id="L32">            return estudiando;</span>
+        }
+
+        public void setEstudiando(boolean estudiando) {
+<span class="fc" id="L36">            this.estudiando = estudiando;</span>
+<span class="fc" id="L37">        }</span>
+
+        public boolean isCasaPadres() {
+<span class="fc" id="L40">            return casaPadres;</span>
+        }
+
+        public void setCasaPadres(boolean casaPadres) {
+<span class="fc" id="L44">            this.casaPadres = casaPadres;</span>
+<span class="fc" id="L45">        }</span>
+        
+        public String asignarCuenta() 
+        {
+<span class="fc" id="L49">            String cuenta = &quot;&quot;;</span>
+            try {
+<span class="fc bfc" id="L51" title="All 6 branches covered.">                if (getEdad() &lt; 18 &amp;&amp; isEstudiando() &amp;&amp; isCasaPadres())</span>
+            {
+<span class="fc" id="L53">                cuenta = &quot;Cuenta confort&quot;;</span>
+            }
+<span class="fc bfc" id="L55" title="All 8 branches covered.">            if (getEdad() &lt; 25 &amp;&amp; getEdad() &gt;= 18 &amp;&amp; isEstudiando() &amp;&amp; !isCasaPadres())</span>
+            {
+<span class="fc" id="L57">                cuenta = &quot;Cuenta Vamos que tu puedes&quot;;</span>
+            }
+<span class="fc bfc" id="L59" title="All 8 branches covered.">            if (getEdad() &gt;= 18 &amp;&amp; getEdad() &lt; 25 &amp;&amp; !isEstudiando() &amp;&amp; isCasaPadres()){</span>
+<span class="fc" id="L60">                cuenta = &quot;Cuenta Ahorra ahora que puedes&quot;;</span>
+<span class="fc bfc" id="L61" title="All 6 branches covered.">            } else if (getEdad() &gt; 18 &amp;&amp; !isEstudiando() &amp;&amp; !isCasaPadres()){</span>
+<span class="fc" id="L62">                cuenta = &quot;Cuenta Saltando del nido&quot;;</span>
+            } 
+<span class="fc bfc" id="L64" title="All 6 branches covered.">            if (getEdad() &gt;= 25 &amp;&amp; !isEstudiando() &amp;&amp; isCasaPadres()){</span>
+<span class="fc" id="L65">                cuenta = &quot;Cuenta Independizate que va siendo hora&quot;;</span>
+            }
+<span class="fc bfc" id="L67" title="All 6 branches covered.">            if (getEdad() &gt;= 25 &amp;&amp; !isEstudiando() &amp;&amp; !isCasaPadres()) {</span>
+<span class="fc" id="L68">                cuenta = &quot;Cuenta Bienvenido a la vida adulta&quot;;</span>
+            }
+<span class="fc bfc" id="L70" title="All 2 branches covered.">            if (cuenta == &quot;&quot;)</span>
+            {
+<span class="fc" id="L72">                cuenta = &quot;No hay ninguna cuenta para ti :(&quot;;</span>
+            }
+
+
+
+            
+<span class="nc" id="L78">            } catch (NullPointerException e){</span>
+<span class="nc" id="L79">                System.out.println(&quot;No se puede crear el cliente con datos no válidos.&quot;);</span>
+
+<span class="fc" id="L81">            }</span>
+<span class="fc" id="L82">            return cuenta;</span>
+        }
+
+        
+
+       @SuppressWarnings(&quot;serial&quot;)
+       class ErrorException extends Exception{
+<span class="fc" id="L89">            public ErrorException(String msg){</span>
+<span class="fc" id="L90">                super(msg);</span>
+<span class="fc" id="L91">            }</span>
+       } 
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
